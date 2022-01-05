@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Message Sender</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+</head>
+<body>
+    <h1>Discord Messsage Sender</h1>
+    <div class="container">
+        <div class="token-div">
+            <label class="token-label" for="token">Discord Token</label>
+            <input type="text" id="token" name="token" placeholder="Discord Token" class="token">
+        </div>
+        <div class="channel-div">
+            <label class="channel-label" for="channel">Channel ID</label>
+            <input type="text" id="channel" name="channel" placeholder="Channel ID" class="channel">
+        </div>
+        <div class="message-div">
+            <label class="message-label" for="message">Message</label>
+            <input type="text" id="message" name="message" placeholder="Message" class="message">
+        </div>
+        <button class="btn" id="btn">Send</button>
+    </div>
+    <h3 class="warn" id="warn">Success!</h3>
+
+    <script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+</body>
+</html>

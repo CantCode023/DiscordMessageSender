@@ -1,0 +1,131 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background: #202020;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 12px;
+    width: 30vw;
+    height: 250px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+/* Token */
+.token-div {
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.token {
+    outline: none!important;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 25px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.token-label {
+    margin-right: 5px;
+}
+
+/* Channel */
+.channel-div {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.channel {
+    outline: none!important;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 25px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.channel-label {
+    margin-right: 28px;
+}
+
+/* Message */
+.message-div {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.message {
+    outline: none!important;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 25px;
+    width: 200px;
+    padding-left: 10px;
+}   
+
+.message-label {
+    margin-right: 40px;
+}
+
+/* Button  */
+.btn {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    min-height: 30px;
+    border-radius: 2em;
+    border: none;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+/* selection asdasd */
+::selection {
+	color: #fff;
+	background-color: rgb(113, 175, 255,0.8);
+}
+
+/* for firefox */
+::moz-selection {
+	color: #fff;
+	background-color: rgb(113, 175, 255,0.8);
+}
+
+.success {
+    color: lime;
+    display: block;
+}
+
+.error {
+    display: block;
+    content: "Error!";
+    color: red;
+}
+
+.warn {
+    display: none;
+}
