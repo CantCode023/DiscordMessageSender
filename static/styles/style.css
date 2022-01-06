@@ -10,6 +10,7 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    height: 97%;
 }
 
 h1 {
@@ -80,19 +81,23 @@ h1 {
 .message {
     outline: none!important;
     border: 2px solid black;
-    border-radius: 2em;
-    height: 25px;
+    border-radius: 1em;
+    height: 50px;
     width: 200px;
     padding-left: 10px;
+    resize: none;
+    word-wrap: normal;
 }   
 
 .message-label {
     margin-right: 40px;
+    position: relative;
+    bottom: 25px;
 }
 
 /* Button  */
 .btn {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 150px;
     height: 30px;
     min-height: 30px;
@@ -128,4 +133,14 @@ h1 {
 
 .warn {
     display: none;
+}
+
+@media screen and (max-width: 1084px) {
+    .message-label {
+        position: relative;;
+        bottom: 0;
+    }
+    .btn {
+        margin-top: 5px;
+    }
 }
